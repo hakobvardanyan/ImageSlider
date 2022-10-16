@@ -1,18 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layoutDescription="@xml/carousel_scene_portrait"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image5"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:alpha="0"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:transformPivotX="125dp"
+        android:transformPivotY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_red_dark" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image4"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:alpha="0.6"
+        android:scaleX="0.4"
+        android:scaleY="0.7"
+        android:transformPivotX="30dp"
+        android:transformPivotY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_green_dark" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image3"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:transformPivotX="125dp"
+        android:transformPivotY="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_blue_dark" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image2"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:alpha="0.6"
+        android:scaleX="0.4"
+        android:scaleY="0.7"
+        android:transformPivotX="220dp"
+        android:transformPivotY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_purple" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image1"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:alpha="0"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:transformPivotX="125dp"
+        android:transformPivotY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_orange_dark" />
+
+    <androidx.constraintlayout.helper.widget.Carousel
+        android:id="@+id/carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:carousel_backwardTransition="@+id/backward2"
+        app:carousel_firstView="@+id/image3"
+        app:carousel_forwardTransition="@+id/forward2"
+        app:carousel_infinite="true"
+        app:carousel_nextState="@+id/next2"
+        app:carousel_previousState="@+id/previous2"
+        app:constraint_referenced_ids="image1, image2, image3, image4, image5" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
