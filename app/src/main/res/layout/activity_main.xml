@@ -78,14 +78,13 @@
 
     <androidx.constraintlayout.helper.widget.Carousel
         android:id="@+id/carousel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:carousel_backwardTransition="@+id/backward2"
+        app:carousel_backwardTransition="@+id/backward"
         app:carousel_firstView="@+id/image3"
-        app:carousel_forwardTransition="@+id/forward2"
+        app:carousel_forwardTransition="@+id/forward"
         app:carousel_infinite="true"
-        app:carousel_nextState="@+id/next2"
-        app:carousel_previousState="@+id/previous2"
+        app:carousel_nextState="@+id/next"
+        app:carousel_previousState="@+id/previous"
         app:constraint_referenced_ids="image1, image2, image3, image4, image5" />
-
 </androidx.constraintlayout.motion.widget.MotionLayout>
