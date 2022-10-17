@@ -24,12 +24,12 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/previous">
-        <Constraint android:id="@+id/image1">
+        <Constraint android:id="@+id/card1">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toStartOf="@+id/image2"
+                motion:layout_constraintEnd_toStartOf="@+id/card2"
                 motion:layout_constraintTop_toTopOf="parent" />
             <Transform
                 android:scaleX="0.4"
@@ -39,7 +39,7 @@
             <PropertySet android:alpha="0.6" />
         </Constraint>
 
-        <Constraint android:id="@+id/image2">
+        <Constraint android:id="@+id/card2">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
@@ -52,14 +52,15 @@
                 android:scaleY="1"
                 android:transformPivotX="125dp"
                 android:transformPivotY="200dp" />
+            <PropertySet android:alpha="1" />
         </Constraint>
 
-        <Constraint android:id="@+id/image3">
+        <Constraint android:id="@+id/card3">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toEndOf="@+id/image2"
+                motion:layout_constraintStart_toEndOf="@+id/card2"
                 motion:layout_constraintTop_toTopOf="parent" />
             <Transform
                 android:scaleX="0.4"
@@ -69,7 +70,7 @@
             <PropertySet android:alpha="0.6" />
         </Constraint>
 
-        <Constraint android:id="@+id/image4">
+        <Constraint android:id="@+id/card4">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
@@ -88,7 +89,7 @@
     <ConstraintSet android:id="@+id/start" />
 
     <ConstraintSet android:id="@+id/next">
-        <Constraint android:id="@+id/image2">
+        <Constraint android:id="@+id/card2">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
@@ -103,12 +104,12 @@
             <PropertySet android:alpha="0" />
         </Constraint>
 
-        <Constraint android:id="@+id/image3">
+        <Constraint android:id="@+id/card3">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toStartOf="@+id/image4"
+                motion:layout_constraintEnd_toStartOf="@+id/card4"
                 motion:layout_constraintTop_toTopOf="parent" />
             <Transform
                 android:scaleX="0.4"
@@ -118,7 +119,7 @@
             <PropertySet android:alpha="0.6" />
         </Constraint>
 
-        <Constraint android:id="@+id/image4">
+        <Constraint android:id="@+id/card4">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
@@ -134,12 +135,12 @@
             <PropertySet android:alpha="1" />
         </Constraint>
 
-        <Constraint android:id="@+id/image5">
+        <Constraint android:id="@+id/card5">
             <Layout
                 android:layout_width="250dp"
                 android:layout_height="400dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toEndOf="@+id/image4"
+                motion:layout_constraintStart_toEndOf="@+id/card4"
                 motion:layout_constraintTop_toTopOf="parent" />
             <Transform
                 android:scaleX="0.4"
