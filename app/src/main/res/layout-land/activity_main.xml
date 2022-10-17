@@ -151,7 +151,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.helper.widget.Carousel
-        android:id="@+id/carousel"
+        android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:carousel_backwardTransition="@+id/backward"

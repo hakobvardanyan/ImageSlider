@@ -109,7 +109,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.helper.widget.Carousel
-        android:id="@+id/carousel"
+        android:id="@+id/slider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:carousel_backwardTransition="@+id/backward"
