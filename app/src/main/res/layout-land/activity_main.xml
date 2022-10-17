@@ -5,20 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
+    android:paddingVertical="16dp"
     app:layoutDescription="@xml/carousel_scene">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card5"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
+        android:id="@+id/card7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha="0"
-        android:scaleX="0.4"
-        android:scaleY="0.4"
-        android:transformPivotX="125dp"
-        android:transformPivotY="200dp"
+        android:scaleX="0.1"
+        android:scaleY="0.1"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
         app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:cardBackgroundColor="@android:color/holo_orange_light">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.2"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
+        app:layout_constraintEnd_toStartOf="@+id/card7"
+        app:layout_constraintStart_toEndOf="@+id/card5"
         app:layout_constraintTop_toTopOf="parent"
         tools:cardBackgroundColor="@android:color/holo_red_dark">
 
@@ -29,17 +50,17 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card4"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
+        android:id="@+id/card5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha="0.6"
-        android:scaleX="0.4"
-        android:scaleY="0.7"
-        android:transformPivotX="30dp"
-        android:transformPivotY="200dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/card3"
+        app:layout_constraintDimensionRatio="3:5"
+        app:layout_constraintEnd_toStartOf="@+id/card6"
+        app:layout_constraintStart_toEndOf="@+id/card4"
         app:layout_constraintTop_toTopOf="parent"
         tools:cardBackgroundColor="@android:color/holo_green_dark">
 
@@ -50,13 +71,12 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card3"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
-        android:transformPivotX="125dp"
-        android:transformPivotY="200dp"
+        android:id="@+id/card4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,16 +89,38 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card2"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
+        android:id="@+id/card3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha="0.6"
-        android:scaleX="0.4"
-        android:scaleY="0.7"
-        android:transformPivotX="220dp"
-        android:transformPivotY="200dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
+        app:layout_constraintEnd_toStartOf="@+id/card4"
+        app:layout_constraintStart_toEndOf="@+id/card2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:cardBackgroundColor="@android:color/holo_purple">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.2"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
         app:layout_constraintEnd_toStartOf="@+id/card3"
+        app:layout_constraintStart_toEndOf="@+id/card1"
         app:layout_constraintTop_toTopOf="parent"
         tools:cardBackgroundColor="@android:color/holo_purple">
 
@@ -90,17 +132,17 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card1"
-        android:layout_width="250dp"
-        android:layout_height="400dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:alpha="0"
-        android:scaleX="0.4"
-        android:scaleY="0.4"
-        android:transformPivotX="125dp"
-        android:transformPivotY="200dp"
+        android:scaleX="0.1"
+        android:scaleY="0.1"
+        app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:5"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:cardBackgroundColor="@android:color/holo_orange_dark">
+        tools:cardBackgroundColor="@android:color/holo_blue_bright">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
@@ -110,13 +152,13 @@
 
     <androidx.constraintlayout.helper.widget.Carousel
         android:id="@+id/carousel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:carousel_backwardTransition="@+id/backward"
-        app:carousel_firstView="@+id/card3"
+        app:carousel_firstView="@+id/card4"
         app:carousel_forwardTransition="@+id/forward"
         app:carousel_infinite="true"
         app:carousel_nextState="@+id/next"
         app:carousel_previousState="@+id/previous"
-        app:constraint_referenced_ids="card1, card2, card3, card4, card5" />
+        app:constraint_referenced_ids="card1, card2, card3, card4, card5, card6, card7" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
